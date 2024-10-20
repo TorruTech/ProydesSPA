@@ -139,22 +139,3 @@ function checkElementsVisibility() {
 
 window.addEventListener('DOMContentLoaded', checkElementsVisibility);
 window.addEventListener('scroll', checkElementsVisibility);
-
-
-function getWeather() {
-    const apiKey = 'f2221861eefa0ea1283b68e0275a7e28';
-    const city = 'Cuarte de Huerva';
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-    async function conexionAPI(apiUrl) {
-        let response = await fetch(apiUrl);
-        let data = await response.json();
-        const weatherInfo = document.getElementById('weather-info');
-        weatherInfo.innerHTML = `Tª: ${data.main.temp}°C <br> Descripción: ${data.weather[0].description} <br> <i class="fas fa-sun" style="color: orange;"></i>`;
-    }
-
-    conexionAPI(apiUrl);
-
-}
-
-window.addEventListener('load', getWeather);
