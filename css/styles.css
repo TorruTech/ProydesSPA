@@ -11510,3 +11510,29 @@ aside button:hover {
       margin-left: 0; /* Centramos el contenedor */
   }
 }
+
+/* Para pantallas pequeñas (hasta 1023px) */
+@media (max-width: 1023px) {
+  aside {
+    position: relative;
+    width: 100vw;
+    border-radius: 0;
+    margin-top: 20px;
+    border: none;
+  }
+
+  aside h2 {
+    padding: 30px;
+    margin-bottom: 0px;
+  }
+
+  .video iframe {
+    width: 100vw;
+    height: 35vh;
+  }
+
+  aside button {
+    margin: 20px;
+  }
+}
+
