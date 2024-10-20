@@ -11334,13 +11334,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding: 10px 20px;
   border-radius: 5px; 
   cursor: pointer; 
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 
 #submitButton:hover {
-  background-color: gray; 
   transform: scale(1.1);
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 
 footer {
@@ -11362,7 +11361,7 @@ footer img {
 
 footer img:hover {
   transform: scale(1.3);
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 
 iframe {
@@ -11371,7 +11370,7 @@ iframe {
 
 iframe:hover {
   transform: scale(1.15);
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 
 .navbar-brand img {
@@ -11428,7 +11427,7 @@ aside button {
   transition-duration: 0.3s;
   margin: auto;
   margin-bottom: 15px;
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 
 aside button a {
@@ -11438,7 +11437,7 @@ aside button a {
 
 aside button:hover {
   transform: scale(1.15);
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 
 #current-time {
@@ -11519,6 +11518,7 @@ aside button:hover {
       width: 100%; /* El contenedor ocupa el 100% del ancho en móviles */
       margin-left: 0; /* Centramos el contenedor */
   }
+
 }
 
 /* Para pantallas pequeñas (hasta 1023px) */
@@ -11544,5 +11544,50 @@ aside button:hover {
   aside button {
     margin: 20px;
   }
+ 
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 1024px) {
+  .navbar-brand {
+    padding-right: 0; /* Elimina el padding que empuja el logo hacia la derecha */
+    margin-right: auto; /* Alinea el logo a la izquierda */
+  }
+
+  .navbar-brand img {
+    width: 150px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    height: auto; /* Mantiene la proporción del logo */
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* Alinea el botón del menú a la derecha */
+  }
+
+  .navbar-nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 10px; /* Ajusta el espacio entre los elementos del menú */
+  }
+
+  .nav-link {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto en móviles */
+  }
+}
+
+/* Ajustes generales para la barra de navegación */
+.navbar {
+  padding: 0.5rem 1rem; /* Reduce el padding general */
+}
+
+.navbar-brand img {
+  max-width: 100%; /* Asegura que el logo no se desborde en pantallas pequeñas */
+  height: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 0.5rem 1rem; /* Ajusta el padding de los enlaces de navegación */
 }
 
