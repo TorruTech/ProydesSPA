@@ -11523,7 +11523,7 @@ aside button:hover {
 }
 
 /* Para pantallas pequeñas (hasta 1023px) */
-@media (max-width: 1023px) {
+@media (max-width: 1600px) {
   aside {
     position: relative;
     width: 100vw;
